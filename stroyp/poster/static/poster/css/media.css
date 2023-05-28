@@ -1,0 +1,97 @@
+@media screen and (max-width: 1200px) {
+    .work_portfolio_photo{
+        grid-template-columns: min-content min-content min-content;
+    }
+}
+@media screen and (max-width: 980px) {
+   .all_content {
+   }
+.main_text_block{
+    margin:0;
+}
+.text_calculation p{
+    width: 44vh;
+    margin-left: 10px;
+}
+.text h1{
+    font-size: 1.53rem;
+}
+.text{
+    margin-left:10px;
+}
+.line_office{
+    width: 50px;
+    margin-bottom: 20px;
+}
+.work_portfolio_photo{
+        grid-template-columns: min-content min-content;
+    }
+.box_content{
+    flex-direction: column;
+    align-items: center;
+}
+.itcss{
+    max-width:100%;
+}
+.btn{
+    background-image:url(code/stroyp/poster/static/poster/img/pixil-frame-7564.png)
+}
+.repair_house{
+    margin-bottom:1%;
+}
+.box_content_text{
+    width: 90%;
+    height: 60px;
+}
+.img_arrows_portfolio{
+    display:none;
+}
+.photo_img_osnova{
+    width:980px;
+}
+.portfolio_completed_works{
+    font-size: 42px;
+}
+.contacts{
+    flex-direction: column;
+}
+.contacts_left{
+        width: 80%;
+}
+.services{
+    margin:0;
+}
+.services_two_blocks{
+    flex-direction: column;
+    align-items: center;
+}
+.house_price{
+    width:100%;
+    height:85vh;
+}
+.office_price{width:100%;}
+.maps{
+    width:100%;
+}
+}
+
+@media screen and (max-width: 600px){
+    .services_two_blocks{
+        align-items: flex-start;
+    }
+    .work_portfolio_photo{
+        grid-template-columns: min-content;
+    }
+    .item_photo_img{
+        min-width: 320px;
+        max-width: 320px;
+        height: 375px;
+    }
+    .item_photo_portfolio{
+        padding-bottom:0;
+    }
+    .item_photo_portfolio{
+        padding:0;
+    }
+
+}

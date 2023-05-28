@@ -1,0 +1,23 @@
+{% extends 'poster/index.html' %}
+{% load static %}
+{% block content %}
+    <div class="photo_thanks">
+        <img src="{% static 'poster/img/istockphoto-1215758851347.jpg' %}" style="height:94%;opacity:0.6;background:black;" width="100%">
+    </div>
+     <div style="position: sticky;z-index: 2;" class="main_text">
+            <h2 class="thank_order">Спасибо за ваше обращение!</h2>
+            <p style="text-align:center;margin-top:20px;color:white;font-size:22px;">Ваш заявка был успешна отправлена.</p>
+            <div style="text-align:center;max-width:70%;margin:60px 30%;color:white;font-size:22px;">
+                <p>В ближайшее время менеджер свяжется с вами для подтверждения заказа.</p>
+            </div>
+            <div style="text-align:center;">
+                <a href="{% url 'home' %}" class="button light"><button style="" class="two_buttons_the_basket">Вернуться на Главную страницу</button></a>
+            </div>
+
+    </div>
+{% endblock %}
+{% block filter %}
+<footer>
+    <div style="position:unset;" class="footer"></div>
+</footer>
+{% endblock %}

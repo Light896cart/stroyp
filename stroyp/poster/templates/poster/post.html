@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'poster/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="{% static 'poster/css/simple-adaptive-slider.css' %}">
+    <link rel="stylesheet" href="{% static 'poster/css/media.css' %}">
+
+</head>
+<body>
+<a href="{% url 'home' %}"><div style="position: absolute;z-index: 81;float: right;right: 2%;top: 2%;">
+    <img src="{% static 'poster/img/pixil-frame-211.png' %}" width="30">
+</div></a>
+    <div class="btn-wrapper">
+      <button class="btn btn-prev"><img class="two_strelki_button_img" src="{% static 'poster/img/pixil-frame-0.png' %}" style="transform: rotate(180deg);" width="35"></button>
+        <button class="btn btn-next"><img class="two_strelki_button_img" src="{% static 'poster/img/pixil-frame-0.png' %}" width="35"></button>
+    </div>
+<div style="" class="itcss">
+    <div class="itcss__wrapper">
+        <div class="itcss__items">
+            {% if post.photo %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo.url}}"></div>
+            {% endif %}
+            {% if post.photo1 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo1.url}}"></div>
+            {% endif %}
+            {% if post.photo2 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo2.url}}"></div>
+            {% endif %}
+            {% if post.photo3 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo3.url}}"></div>
+            {% endif %}
+            {% if post.photo4 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo4.url}}"></div>
+            {% endif %}
+            {% if post.photo5 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo5.url}}"></div>
+            {% endif %}
+            {% if post.photo6 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo6.url}}"></div>
+            {% endif %}
+            {% if post.photo7 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo7.url}}"></div>
+            {% endif %}
+            {% if post.photo8 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo8.url}}"></div>
+            {% endif %}
+            {% if post.photo9 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo9.url}}"></div>
+            {% endif %}
+            {% if post.photo10 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo10.url}}"></div>
+            {% endif %}
+            {% if post.photo11 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo11.url}}"></div>
+            {% endif %}
+            {% if post.photo12 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo12.url}}"></div>
+            {% endif %}
+            {% if post.photo13 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo13.url}}"></div>
+            {% endif %}
+            {% if post.photo14 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo14.url}}"></div>
+            {% endif %}
+            {% if post.photo15 %}
+                <div class="itcss__item"><img class="slide-img" src="{{post.photo15.url}}"></div>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+<script src="{% static 'poster/js/jquery-3.6.3.js' %}"></script>
+<script src="{% static 'poster/js/menu.js' %}"></script>
+<script src="{% static 'poster/js/simple-adaptive-slider.js' %}"></script>
+</body>
+</html>
